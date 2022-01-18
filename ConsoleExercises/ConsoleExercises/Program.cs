@@ -42,6 +42,9 @@ namespace ConsoleExercises
 
         private static void ShowDateTimeFormats()
         {
+            Console.Title = "My Rocking App 2022";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
             Console.WriteLine("-----------------------------------------------------------");
             Console.WriteLine("Date Time Formats \n");
             Console.WriteLine("DateTime.Now.ToString('MM/dd/yyyy') -- Will Display : \n" + DateTime.Now.ToString("MM/dd/yyyy") + "\n");
@@ -52,6 +55,7 @@ namespace ConsoleExercises
             Console.WriteLine("DateTime.Now.ToString('dddd, MMM dd yyyy, hh: mm:ss') -- Will Display : \n" + DateTime.Now.ToString("dddd , MMM dd yyyy,hh:mm:ss") + "\n");
             Console.WriteLine("Please refer to:  http://www.geekzilla.co.uk/View00FF7904-B510-468C-A2C8-F859AA20581F.htm ");
             Console.WriteLine("-----------------------------------------------------------");
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.ReadLine();
         }
     }
