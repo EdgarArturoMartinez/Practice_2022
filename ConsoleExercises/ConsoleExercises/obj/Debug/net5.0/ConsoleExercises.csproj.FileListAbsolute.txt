@@ -5,7 +5,6 @@ D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\bin\Debug\
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\bin\Debug\net5.0\ConsoleExercises.dll
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\bin\Debug\net5.0\ref\ConsoleExercises.dll
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\bin\Debug\net5.0\ConsoleExercises.pdb
-D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ConsoleExercises.csproj.AssemblyReference.cache
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ConsoleExercises.GeneratedMSBuildEditorConfig.editorconfig
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ConsoleExercises.AssemblyInfoInputs.cache
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ConsoleExercises.AssemblyInfo.cs
@@ -14,3 +13,4 @@ D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ref\ConsoleExercises.dll
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ConsoleExercises.pdb
 D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ConsoleExercises.genruntimeconfig.cache
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\ConsoleExercises\obj\Debug\net5.0\ConsoleExercises.csproj.AssemblyReference.cache

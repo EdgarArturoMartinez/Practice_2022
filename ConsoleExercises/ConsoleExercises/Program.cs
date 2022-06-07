@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace ConsoleExercises
 {
@@ -26,10 +27,16 @@ namespace ConsoleExercises
             Console.WriteLine("2.  Show Environment Details");
             Console.WriteLine("3.  Show Formats in Numerical Data");
             Console.WriteLine("4.  Syntax of the if-else Statement");
-            Console.WriteLine("5.  Syntax of the switch Statement");
-            Console.WriteLine("6.  Syntax of Conditional Operator");
-            Console.WriteLine("7.  While Loop Syntax");
-            Console.WriteLine("8.  Do - While Loop Syntax");
+            Console.WriteLine("5.  How to evaluate an Even number (Numero Primo)");
+            Console.WriteLine("6.  Syntax of the switch Statement");
+            Console.WriteLine("7.  Syntax of Conditional Operator");
+            Console.WriteLine("8.  While Loop Syntax");
+            Console.WriteLine("9.  Do - While Loop Syntax");
+            Console.WriteLine("10. For Loop -- Print first 10 multiples");
+            Console.WriteLine("11. For Loop -- Show even and odd from String");
+            Console.WriteLine("12. For Loop -- Print Array in reverse order");
+            Console.WriteLine("13. Arrays -- Simple Array Sum");
+            Console.WriteLine("14. Arrays -- Find MIN and MAX calculating summing 4 of the 5 elements");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("X.  Exit.");
@@ -50,16 +57,34 @@ namespace ConsoleExercises
                     IfElseSyntax(13);
                     return true;
                 case "5":
-                    SwitchStatementSyntax(13);
+                    isEvenOrNot(Convert.ToInt32(Console.ReadLine().Trim()));
                     return true;
                 case "6":
-                    ConditionalOperatorSyntax(18,18);
+                    SwitchStatementSyntax(13);
                     return true;
                 case "7":
-                    WhileLoopSyntax();
+                    ConditionalOperatorSyntax(18,18);
                     return true;
                 case "8":
+                    WhileLoopSyntax();
+                    return true;
+                case "9":
                     DoWhileLoopSyntax();
+                    return true;
+                case "10":
+                    TenFirstMultiples(Convert.ToInt32(Console.ReadLine().Trim()));
+                    return true;
+                case "11":
+                    ShowOddAndEven("Toronto");
+                    return true;
+                case "12":
+                    ShowReverseArray();
+                    return true;
+                case "13":
+                    ArraySimpleSum();
+                    return true;
+                case "14":
+                    ArrayMinMaxSumFourOfFive();
                     return true;
                 case "X":
                     Console.WriteLine("Leaving...\a");
@@ -151,6 +176,38 @@ namespace ConsoleExercises
             Console.WriteLine("-- else");
             Console.WriteLine("-- {");
             Console.WriteLine("--   Console.WriteLine('Keep studying dude!!');");
+            Console.WriteLine("-- }");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+        private static void isEvenOrNot(int givenNumber)
+        {
+            Console.Title = "How to know if a number is even";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+            bool isEven = givenNumber % 2 == 0;
+
+            if (isEven)
+            {
+                Console.WriteLine("Not Weird");
+            }
+            else
+            {
+                Console.WriteLine("Weird");
+            }
+
+            Console.WriteLine("-----------Syntax to know if It is an even number------------------------------------------------\n");
+            Console.WriteLine("-- bool isEven = givenNumber % 2 == 0;");
+            Console.WriteLine("-- if (isEven)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   Console.WriteLine('Not Weird');");
+            Console.WriteLine("-- }");
+            Console.WriteLine("-- else");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   Console.WriteLine('Weird');");
             Console.WriteLine("-- }");
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ReadLine();
@@ -283,5 +340,162 @@ namespace ConsoleExercises
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ReadLine();
         }
+
+        private static void TenFirstMultiples(int number)
+        {
+            Console.Title = "10 first multiples with For loop.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+            
+            
+            for (int i = 1 ; i <= 10; i++)
+            {
+                Console.WriteLine($"{number} * {i} = {number * i}");
+            }
+
+
+            Console.WriteLine("-----------How to show 10 first multiples of a number with a For loop.------------------------------------------------\n");
+            Console.WriteLine("-- for (int i = 1 ; i <= 10; i++)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   Console.WriteLine($'{number} * {i} = {number * i}");
+            Console.WriteLine("-- }");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+        private static void ShowOddAndEven(string T)
+        {
+            Console.Title = "Show Odd and Even with For loop.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+            string evenChars = "";
+            string oddChars = "";
+
+            for (int i = 0; i < T.Length; i++)
+            {
+                string C = T[i].ToString();
+
+                if (i % 2 == 0)
+                {
+                    evenChars = evenChars + C;
+                }
+                else
+                {
+                    oddChars = oddChars + C;
+                }
+            }
+
+            Console.WriteLine($"{evenChars} {oddChars}");
+
+
+
+            Console.WriteLine("-----------How to Show Odd and Even with For loop.------------------------------------------------\n");
+            Console.WriteLine("-- string evenChars = '';");
+            Console.WriteLine("-- string oddChars = '';");
+            Console.WriteLine("-- for (int i = 0; i < T.Length; i++)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   string C = T[i].ToString();");
+            Console.WriteLine("--   if (i % 2 == 0)");
+            Console.WriteLine("--   {");
+            Console.WriteLine("--       evenChars = evenChars + C;");
+            Console.WriteLine("--   }");
+            Console.WriteLine("--   else");
+            Console.WriteLine("--   {");
+            Console.WriteLine("--       oddChars = oddChars + C;");
+            Console.WriteLine("--   }");
+            Console.WriteLine("-- }");
+            Console.WriteLine("-- Console.WriteLine($'{evenChars} {oddChars}');");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+        private static void ShowReverseArray()
+        {
+            Console.Title = "Show reverse array.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+            int[] numbers = { 1, 2, 3, 4 };
+            string output = "";
+
+            for (int i = (numbers.Length - 1); i> -1; i--)
+            {
+                output = output + numbers[i] + " ";
+            }
+            Console.WriteLine(output);
+
+            Console.WriteLine("-----------Show reverse array with For loop.------------------------------------------------\n");
+            Console.WriteLine("-- int[] numbers = { 1, 2, 3, 4 };");
+            Console.WriteLine("-- string output = '';");
+            Console.WriteLine("-- for (int i = (numbers.Length - 1); i> -1; i--)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   output = output + numbers[i] + ' ';");
+            Console.WriteLine("-- }");
+            Console.WriteLine("-- Console.WriteLine(output);");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+        private static void ArraySimpleSum()
+        {
+            Console.Title = "Show Sum of an Array.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+            int[] arr = { 1, 2, 3, 4 };
+            int sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+            Console.WriteLine(sum);
+
+            Console.WriteLine("-----------Show reverse array with For loop.------------------------------------------------\n");
+            Console.WriteLine("-- int[] arr = { 1, 2, 3, 4 };");
+            Console.WriteLine("-- int sum = 0;");
+            Console.WriteLine("-- for (int i = 0; i < arr.Length; i++)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   sum += arr[i];");
+            Console.WriteLine("-- }");
+            Console.WriteLine("-- Console.WriteLine(sum);");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+
+
+        private static void ArrayMinMaxSumFourOfFive()
+        {
+            Console.Title = "Find MIN and MAX calculating summing 4 of the 5 elements.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+            int[] arr = { 1,3,5,7,9 };
+            Array.Sort(arr);
+
+            long min = arr.Take(4).Sum(item => (long)item);
+            long max = arr.Skip(1).Sum(item => (long)item);
+
+            Console.WriteLine($"{min} {max}");
+
+            Console.WriteLine("-----------Find MIN and MAX calculating summing 4 of the 5 elements.------------------------------------------------\n");
+            Console.WriteLine("-- int[] arr = { 1,3,5,7,9 };");
+            Console.WriteLine("-- Array.Sort(arr);");
+            Console.WriteLine("-- long min = arr.Take(4).Sum();");
+            Console.WriteLine("-- long max = arr.Skip(1).Sum();");
+            Console.WriteLine("-- Console.WriteLine($'{min} {max}');");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+
+        
     }
 }
