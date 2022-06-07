@@ -37,6 +37,8 @@ namespace ConsoleExercises
             Console.WriteLine("12. For Loop -- Print Array in reverse order");
             Console.WriteLine("13. Arrays -- Simple Array Sum");
             Console.WriteLine("14. Arrays -- Find MIN and MAX calculating summing 4 of the 5 elements");
+            Console.WriteLine("15. Foreach -- Simple printing of array elements");
+            Console.WriteLine("16. Foreach -- Printing array with LINQ and Foreach loop");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("X.  Exit.");
@@ -85,6 +87,12 @@ namespace ConsoleExercises
                     return true;
                 case "14":
                     ArrayMinMaxSumFourOfFive();
+                    return true;
+                case "15":
+                    PrintArraysForEach();
+                    return true;
+                case "16":
+                    PrintArrayWithLINQ();
                     return true;
                 case "X":
                     Console.WriteLine("Leaving...\a");
@@ -468,8 +476,6 @@ namespace ConsoleExercises
             Console.ReadLine();
         }
 
-
-
         private static void ArrayMinMaxSumFourOfFive()
         {
             Console.Title = "Find MIN and MAX calculating summing 4 of the 5 elements.";
@@ -491,6 +497,73 @@ namespace ConsoleExercises
             Console.WriteLine("-- long min = arr.Take(4).Sum();");
             Console.WriteLine("-- long max = arr.Skip(1).Sum();");
             Console.WriteLine("-- Console.WriteLine($'{min} {max}');");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+        private static void PrintArraysForEach()
+        {
+            Console.Title = "Print a simple string and int array with Foreach loop.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+            string[] carTypes = { "Ford", "BMW", "Mercedes Benz", "Lotus" };
+            foreach (string carModel in carTypes)
+            {
+                Console.WriteLine(carModel);
+            }
+
+            int[] myInts = { 10, 20, 30, 40 };
+            foreach (int i in myInts)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("-----------Print a simple string and int array with Foreach loop.------------------------------------------------\n");
+            Console.WriteLine("-- string[] carTypes = { 'Ford', 'BMW', 'Mercedes Benz', 'Lotus' };");
+            Console.WriteLine("-- foreach (string carModel in carTypes)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   Console.WriteLine(carModel);");
+            Console.WriteLine("-- }");
+            Console.WriteLine("-- ---------------------------------------------------------------------------------------------------------------");
+            Console.WriteLine("-- int[] myInts = { 10, 20, 30, 40 };");
+            Console.WriteLine("-- foreach (int i in myInts)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   Console.WriteLine(i);");
+            Console.WriteLine("-- }");
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ReadLine();
+        }
+
+
+        private static void PrintArrayWithLINQ()
+        {
+            Console.Title = "Printing array with LINQ and Foreach loop.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+            int[] numbers = { 10, 20, 30, 40, 1, 2, 3, 8 };
+
+            //LINQ query
+            var subset = from i in numbers where i < 10 select i;
+            Console.WriteLine("Values in Subset: ");
+
+            foreach (var i in subset)
+            {
+                Console.WriteLine($"{i}");
+            }
+
+            Console.WriteLine("-----------Printing array with LINQ and Foreach loop.------------------------------------------------\n");
+            Console.WriteLine("-- int[] numbers = { 10, 20, 30, 40, 1, 2, 3, 8 };");
+            Console.WriteLine("-- //LINQ query");
+            Console.WriteLine("-- var subset = from i in numbers where i < 10 select i;");
+            Console.WriteLine("-- Console.WriteLine('Values in Subset: ');");
+            Console.WriteLine("-- foreach (var i in subset)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   Console.WriteLine($'{i}');");
+            Console.WriteLine("-- }");
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ReadLine();
         }
