@@ -1,0 +1,16 @@
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\bin\Debug\net5.0\GorilaEvenNumbers.exe
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\bin\Debug\net5.0\GorilaEvenNumbers.deps.json
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\bin\Debug\net5.0\GorilaEvenNumbers.runtimeconfig.json
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\bin\Debug\net5.0\GorilaEvenNumbers.runtimeconfig.dev.json
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\bin\Debug\net5.0\GorilaEvenNumbers.dll
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\bin\Debug\net5.0\ref\GorilaEvenNumbers.dll
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\bin\Debug\net5.0\GorilaEvenNumbers.pdb
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.csproj.AssemblyReference.cache
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.AssemblyInfoInputs.cache
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.AssemblyInfo.cs
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.csproj.CoreCompileInputs.cache
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.dll
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\ref\GorilaEvenNumbers.dll
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.pdb
+D:\Arturo.Martinez\Development\2022\ConsoleExercises\GorilaEvenNumbers\obj\Debug\net5.0\GorilaEvenNumbers.genruntimeconfig.cache

@@ -39,6 +39,7 @@ namespace ConsoleExercises
             Console.WriteLine("14. Arrays -- Find MIN and MAX calculating summing 4 of the 5 elements");
             Console.WriteLine("15. Foreach -- Simple printing of array elements");
             Console.WriteLine("16. Foreach -- Printing array with LINQ and Foreach loop");
+            Console.WriteLine("17. Foreach -- Compress String Exercise");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("X.  Exit.");
@@ -93,6 +94,9 @@ namespace ConsoleExercises
                     return true;
                 case "16":
                     PrintArrayWithLINQ();
+                    return true;
+                case "17":
+                    CompressString();
                     return true;
                 case "X":
                     Console.WriteLine("Leaving...\a");
@@ -566,6 +570,18 @@ namespace ConsoleExercises
             Console.WriteLine("-- }");
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ReadLine();
+        }
+
+
+        private static void CompressString()
+        {
+            string textToCompress = "kkkktttrrrrrrrrrr";
+
+            foreach (var e in textToCompress)
+            {
+                Console.WriteLine(e);
+            }
+
         }
 
 
