@@ -576,15 +576,38 @@ namespace ConsoleExercises
         private static void CompressString()
         {
             string textToCompress = "kkkktttrrrrrrrrrr";
+            int coincidences = 0;
+            string finalCompressMessage = string.Empty;
 
-            foreach (var e in textToCompress)
+            // Variable totalStringDigits extracts info for total digits from string
+            int totalStringDigits = textToCompress.ToString().Length;
+
+            // Convert string into an Array
+            string[] arrayFromText = new string[textToCompress.Length];
+            for (int i=0; i < totalStringDigits; i++)
             {
-                Console.WriteLine(e);
+                arrayFromText[i] = textToCompress[i].ToString();
             }
 
+            //Compare each position from string with each position from array
+            //foreach (var e in textToCompress)
+            foreach (string e in arrayFromText)
+            {
+                foreach (string arrayElement in arrayFromText)
+                {  
+                    if (e.ToString().Equals(arrayElement))
+                    {
+                        coincidences++;                        
+                    }
+                    finalCompressMessage = coincidences + e;
+                    //Console.WriteLine(finalCompressMessage);
+                }
+            string keyToRemove = e.ToString();
+            arrayFromText = arrayFromText.Where(val => val != keyToRemove).ToArray();
+            Console.WriteLine(finalCompressMessage);
+                coincidences = 0;
+            }
+            Console.ReadLine();
         }
-
-
-        
     }
 }
