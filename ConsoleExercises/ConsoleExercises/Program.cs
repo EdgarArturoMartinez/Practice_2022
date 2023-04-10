@@ -540,7 +540,6 @@ namespace ConsoleExercises
             Console.ReadLine();
         }
 
-
         private static void PrintArrayWithLINQ()
         {
             Console.Title = "Printing array with LINQ and Foreach loop.";
@@ -572,7 +571,6 @@ namespace ConsoleExercises
             Console.ReadLine();
         }
 
-
         private static void CompressString()
         {
             string textToCompress = "kkkktttrrrrrrrrrr";
@@ -597,7 +595,8 @@ namespace ConsoleExercises
                 {  
                     if (e.ToString().Equals(arrayElement))
                     {
-                        coincidences++;                        
+                        coincidences++;
+                        Console.WriteLine($"We have found {coincidences} Coincidences for {arrayElement}");
                     }
                     finalCompressMessage = coincidences + e;
                     //Console.WriteLine(finalCompressMessage);

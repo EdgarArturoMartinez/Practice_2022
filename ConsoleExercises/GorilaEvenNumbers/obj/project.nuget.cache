@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9hy6L8EMemHulKSaFseEtlr1M+himbCFbnUgboyVA1opSslgXb0YRSqqn19xw+UvHjoW9WK9OFY5wytyXwzKFg==",
+  "dgSpecHash": "H4W9yWXQQwrJt4HRkUXVn0cT8/w2Ro/zi2qdIsKM76Jnbs3W+cF5RO8OKRZfBGygH2OVYb1amHhBH0tSiCwKtw==",
   "success": true,
   "projectFilePath": "D:\\Arturo.Martinez\\Development\\2022\\ConsoleExercises\\GorilaEvenNumbers\\GorilaEvenNumbers.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

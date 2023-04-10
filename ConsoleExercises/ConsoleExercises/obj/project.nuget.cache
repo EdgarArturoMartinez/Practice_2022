@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "JHaC9upMj3KOATAooxlMgWvDkveCghnGLfTtUm31yJL9Et7YNnRR++eoH2wEwue+21zmRHJYEGIPp87V9k9Jdw==",
+  "dgSpecHash": "ytHybytsH/RZ1hkHSfDryqAXwZI7ev2MQwilUWympWO0Swe/SYT2Wnz3E2blZ1VF5nA0by9OfExYAF0xd7Ah2w==",
   "success": true,
   "projectFilePath": "D:\\Arturo.Martinez\\Development\\2022\\ConsoleExercises\\ConsoleExercises\\ConsoleExercises.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\arturo.martinez\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
