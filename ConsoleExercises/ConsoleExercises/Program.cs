@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace ConsoleExercises
@@ -40,6 +41,7 @@ namespace ConsoleExercises
             Console.WriteLine("15. Foreach -- Simple printing of array elements");
             Console.WriteLine("16. Foreach -- Printing array with LINQ and Foreach loop");
             Console.WriteLine("17. Foreach -- Compress String Exercise");
+            Console.WriteLine("18. Recursive Algorithm -- Print numbers without For, For Each, Do While or While structures");
             Console.WriteLine("");
             Console.WriteLine("");
             Console.WriteLine("X.  Exit.");
@@ -97,6 +99,9 @@ namespace ConsoleExercises
                     return true;
                 case "17":
                     CompressString();
+                    return true;
+                case "18":
+                    RecursiveAlgorithm(1,40);
                     return true;
                 case "X":
                     Console.WriteLine("Leaving...\a");
@@ -606,6 +611,33 @@ namespace ConsoleExercises
             Console.WriteLine(finalCompressMessage);
                 coincidences = 0;
             }
+            Console.ReadLine();
+        }
+
+
+        private static void RecursiveAlgorithm(int num, int limit)
+        {
+            Console.Title = "Show numbers without using For, While, Do While, For Each.";
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.WriteLine("-----------------------------------------------------------\n");
+
+
+            if (num <= limit)
+            {
+                Console.WriteLine(num);
+                RecursiveAlgorithm(num + 1, limit);
+            }
+
+
+            Console.WriteLine("-----------How to Show numbers without using For, While, Do While, For Each.------------------------------------------------\n");
+            Console.WriteLine("-- Call from Main Method using params num and limit");
+            Console.WriteLine("-- if (num <= limit)");
+            Console.WriteLine("-- {");
+            Console.WriteLine("--   Console.WriteLine(num);");
+            Console.WriteLine("--   RecursiveAlgorithm(num + 1, limit);");
+            Console.WriteLine("-- }");
+            Console.BackgroundColor = ConsoleColor.Black;
             Console.ReadLine();
         }
     }
